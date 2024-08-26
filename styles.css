@@ -1,0 +1,25 @@
+/* style.css */
+
+@import url(styles/form1.css);
+@import url(styles/form2.css);
+@import url(styles/form3.css);
+@import url(styles/form4.css);
+
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    width: 90%;
+
+}
+

@@ -1,0 +1,116 @@
+
+.contact-container {
+    display: flex; /* 전체 레이아웃은 Flexbox를 사용 */
+    gap: 80px; /* 이미지와 폼/정보 사이의 간격 */
+    background-color: #F8F4EF;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 960px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-image {
+    flex: 1; /* 이미지가 Flexbox에서 첫 번째 영역을 차지 */
+    align-content: center;
+    margin: 75px, 60px;
+}
+
+.contact-image img {
+    width: 275px;
+    height: 420px;
+    border-radius: 10px;
+
+}
+
+.contact-details {
+    flex: 2; /* Flexbox에서 두 번째 영역을 차지 */
+}
+
+.contact-details h2 {
+    font-size: 56px;
+    color: #1a1a46;
+    margin-bottom: 10px;
+}
+
+.contact-grid {
+    display: grid; /* contact-form과 contact-info를 Grid로 배치 */
+    grid-template-columns: 2fr 1fr; /* 폼이 더 넓게, 정보는 좁게 설정 */
+    gap: 30px; /* 폼과 정보 사이의 간격 */
+}
+
+.contact-form {
+    display: grid;
+    grid-template-rows: auto auto auto auto; /* 제목, 입력 필드, 메시지, 버튼을 세로로 나눔 */
+    gap: 20px; /* 각 요소 사이의 간격 */
+}
+
+
+.contact-form label {
+    font-size: 14px;
+    color: #9b9b9b;
+    margin-bottom: 5px;
+}
+
+.contact-form input{
+    width: 230px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #1a1a46;
+    background-color: #F8F4EF;
+    font-size: 16px;
+    outline: none;
+    color: #1a1a46;
+}
+
+.contact-form button {
+    padding: 12px;
+    width: 187px;
+    background-color: #1a1a46;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 150px;
+    justify-self: start; /* 버튼을 왼쪽 정렬 */
+}
+
+.contact-form button:hover {
+    background-color: #14142e;
+}
+
+.contact-info {
+    display: grid;
+    align-content: center; /* 내용을 상단에 정렬 */
+    justify-content: start; /* 내용을 수평으로 왼쪽 정렬 */
+    padding-left: 20px; /* 텍스트와 아이콘의 왼쪽 간격 */
+    margin-top: 100px;
+}
+
+.contact-info h3 {
+    font-size: 16px;
+    color: #1a1a46;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0 20px;
+    font-size: 14px;
+    color: #1a1a46;
+}
+
+.social-icons {
+    display: grid;
+    grid-auto-flow: column; /* 아이콘들을 가로로 나열 */
+    gap: 15px;
+    margin-top: 50px;
+   
+}
+
+.social-icons img{
+    width: 48px;
+    height: 48px;
+}

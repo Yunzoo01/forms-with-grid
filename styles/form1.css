@@ -1,0 +1,77 @@
+.connect-form {
+    background-color: #162AE3;
+    opacity: 80%;
+    border-radius: 8px;
+    background-image: url('../assets/Form1.jpg'); /* 배경 이미지 경로 설정 */
+    background-size: cover; /* 이미지가 전체를 덮도록 설정 */
+    background-position: center; /* 이미지의 중앙을 기준으로 배치 */
+    background-repeat: no-repeat; /* 이미지 반복을 방지 */
+    background-blend-mode: overlay;
+    width: 598px;
+    height: 495px;
+    padding: 79px;
+    text-align: center;
+    box-sizing: border-box; /* padding을 포함하여 크기 조정 */
+    display: flex; /* 중앙 정렬을 위한 flexbox 설정 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 중앙 정렬 */
+}
+
+h1 {
+    color: white;
+    font-size: 37px;
+}
+
+p {
+    color: white;
+    font-size: 19px;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%; /* 그리드 컨테이너를 가득 채움 */
+}
+
+.name-input, .email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.phone-input {
+    grid-column: 1 / span 2;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+}
+
+form {
+    width: 100%;
+    text-align: left; /* 폼 내의 요소들을 왼쪽 정렬 */
+}
+
+.submit-button1 { 
+    padding: 10px;
+    width: 127px;
+    height: 47px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #162AE3;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 70px;
+    justify-self: start;
+}
+
+.submit-button:hover {
+    background-color: #d1d5db;
+}
